@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "../common/Heading";
 import { services } from "../data/Item";
 import CommonHeading from "../common/CommonHeading";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
@@ -24,12 +25,13 @@ export default function Services() {
                       {val.icon}
                       <h4 className="mb-3">{val.name}</h4>
                       <p className="mb-4">{val.discription}</p>
-                      <a
-                        href="#"
+                      <Link
+                        to={`/details/${val.id}`}
                         className="btn btn-primary px-4 py-2 rounded-pill"
                       >
-                        {val.btn}
-                      </a>
+                        {/* {val.btn} */}
+                        Details
+                      </Link>
                     </div>
                   </div>
                 </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Welcome from "../pages/Welcome";
-import { About, Blog, Event, Menu, Services } from "../pages";
+import { About, Blog, Event, Menu, Services,DetailsPage } from "../pages";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <Event />
       <Menu />
       <Blog />
+      <DetailsPage/>
     </>
   );
 }

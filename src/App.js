@@ -14,6 +14,7 @@ import {
   PageNotFound,
   Cart,
   Blog,
+  DetailsPage,
 } from "./components/pages/index";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Header from "./components/common/Header";
@@ -32,6 +33,7 @@ function App() {
           <Route path="/event" element={<Event />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/details/:id" element={<DetailsPage />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/blog" element={<Blog />} />
         </Routes>

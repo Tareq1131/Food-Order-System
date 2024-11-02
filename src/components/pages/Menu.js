@@ -44,68 +44,68 @@ export default function Menu() {
           />
           <div className="tab-className text-center">
             <ul
-              className="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp"
+              className="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp pointer"
               data-wow-delay="0.1s"
             >
               <li className="nav-item p-2">
-                <a
+                <Link
                   className="d-flex py-2 mx-2 border border-primary bg-white rounded-pill active"
                   onClick={() => filterItems("all")}
                 >
                   <span className="text-dark" style={{ width: "150px" }}>
                     All Items
                   </span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item p-2">
-                <a
+                <Link
                   className="d-flex py-2 mx-2 border border-primary bg-white rounded-pill"
                   onClick={() => filterItems("starter")}
                 >
                   <span className="text-dark" style={{ width: "150px" }}>
                     Starter
                   </span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item p-2">
-                <a
+                <Link
                   className="d-flex py-2 mx-2 border border-primary bg-white rounded-pill"
                   onClick={() => filterItems("maincourse")}
                 >
                   <span className="text-dark" style={{ width: "150px" }}>
                     Main Course
                   </span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item p-2">
-                <a
+                <Link
                   className="d-flex py-2 mx-2 border border-primary bg-white rounded-pill"
                   onClick={() => filterItems("drinks")}
                 >
                   <span className="text-dark" style={{ width: "150px" }}>
                     Drinks
                   </span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item p-2">
-                <a
+                <Link
                   className="d-flex py-2 mx-2 border border-primary bg-white rounded-pill"
                   onClick={() => filterItems("offers")}
                 >
                   <span className="text-dark" style={{ width: "150px" }}>
                     Offers
                   </span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item p-2">
-                <a
+                <Link
                   className="d-flex py-2 mx-2 border border-primary bg-white rounded-pill"
                   onClick={() => filterItems("ourspecials")}
                 >
                   <span className="text-dark" style={{ width: "150px" }}>
                     Our Spesial
                   </span>
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="tab-content">

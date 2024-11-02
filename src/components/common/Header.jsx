@@ -10,7 +10,7 @@ export default function Header() {
   console.log(totalItems);
   useEffect(() => {
     dispatch(getCartTotal());
-  }, []);
+  }, [dispatch]);
 
   const [show, setShow] = useState(false);
   return (
@@ -45,9 +45,9 @@ export default function Header() {
                   </div>
                 ))}
               </div>
-              <button className="btn-search btn btn-primary btn-md-square rounded-circle d-none d-lg-inline-flex">
+              {/* <button className="btn-search btn btn-primary btn-md-square rounded-circle d-none d-lg-inline-flex">
                 <i className="fas fa-search"></i>
-              </button>
+              </button> */}
               <Link
                 to="/cart"
                 className="btn-cart btn btn-primary btn-md-square ms-4 rounded-circle d-none d-lg-inline-flex"

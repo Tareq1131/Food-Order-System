@@ -7,6 +7,7 @@ import Services from "./Services";
 import PageNotFound from "./PageNotFound";
 import Cart from "./Cart";
 import Blog from "./Blog";
+import DetailsPage from "./DetailsPage";
 
 export {
   Home,
@@ -18,4 +19,5 @@ export {
   PageNotFound,
   Cart,
   Blog,
+  DetailsPage,
 };
