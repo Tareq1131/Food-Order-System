@@ -3,7 +3,7 @@ import React from "react";
 import { services } from "../data/Item";
 import { useParams } from "react-router-dom";
 
-console.log("hh", services);
+
 
 export default function DetailsPage() {
   const { id } = useParams();
